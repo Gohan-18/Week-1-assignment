@@ -7,7 +7,14 @@
 */
 
 function isPalindrome(str) {
-  return true;
+
+  let originalStr = str.toLowerCase();
+  let reverseStr = str.toLowerCase().split('').reverse().join('');
+
+  return originalStr === reverseStr;
 }
+
+let answer = isPalindrome('Nan')
+console.log(answer)
 
 module.exports = isPalindrome;
